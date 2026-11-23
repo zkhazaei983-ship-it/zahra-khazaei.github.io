@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Zahra Khazaei | Portfolio</title>
 
 <style>
@@ -15,7 +16,12 @@
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(180deg,#d7dde7,#e9eef4,#f6f8fb);
+    background:linear-gradient(
+        180deg,
+        #d7dde7,
+        #e9eef4,
+        #f6f8fb
+    );
     color:#243447;
     line-height:1.7;
 }
@@ -23,58 +29,62 @@ body{
 /* HERO */
 
 .hero{
-    background:linear-gradient(135deg,#21344f,#425c7c,#7085a0);
+    background:linear-gradient(
+        135deg,
+        #21344f,
+        #4c678b,
+        #7288a3
+    );
+
     color:white;
-    padding:70px 40px;
+    text-align:center;
+    padding:60px 20px;
 }
 
-.hero-content{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    gap:60px;
-}
+/* OUTER CIRCLE */
 
-.photo-box{
-    width:320px;
-    height:320px;
+.photo-frame{
+
+    width:340px;
+    height:340px;
+
+    margin:0 auto 30px;
+
+    border-radius:50%;
 
     background:rgba(255,255,255,.12);
 
-    backdrop-filter:blur(15px);
-
-    border-radius:40px;
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
 
     display:flex;
     align-items:center;
     justify-content:center;
 
     box-shadow:
-    0 20px 40px rgba(0,0,0,.15);
+    0 15px 40px rgba(0,0,0,.15);
 }
 
+/* INNER PHOTO */
+
 .profile-img{
-    width:260px;
-    height:260px;
+
+    width:280px;
+    height:280px;
 
     border-radius:50%;
 
     object-fit:cover;
 
-    /* تنظیم نمایش بالای سر */
-    object-position:center -120px;
+    /* عکس پایین‌تر */
+    object-position:center 55%;
 
     box-shadow:
-    0 10px 25px rgba(0,0,0,.25);
+    0 10px 30px rgba(0,0,0,.18);
 }
 
-.hero-text{
-    flex:1;
-}
-
-.hero-text h1{
-    font-size:3.2rem;
+.hero h1{
+    font-size:3rem;
     margin-bottom:10px;
 }
 
@@ -85,14 +95,21 @@ body{
 
 .tech{
     font-size:1rem;
-    opacity:.9;
+    opacity:.95;
     margin-bottom:20px;
 }
 
+.links{
+    margin-top:15px;
+}
+
 .links a{
+
     color:white;
     text-decoration:none;
-    margin-right:20px;
+
+    margin:0 15px;
+
     font-weight:600;
 }
 
@@ -100,7 +117,7 @@ body{
     text-decoration:underline;
 }
 
-/* MAIN */
+/* CONTENT */
 
 .container{
     width:90%;
@@ -109,46 +126,54 @@ body{
 }
 
 .section{
-    background:rgba(255,255,255,.55);
+
+    background:rgba(255,255,255,.65);
 
     backdrop-filter:blur(8px);
 
-    border-radius:25px;
+    border-left:5px solid #4c678b;
+
+    border-radius:22px;
 
     padding:30px;
 
     margin-bottom:25px;
 
-    border-left:5px solid #4c678b;
-
     box-shadow:
-    0 5px 15px rgba(0,0,0,.05);
+    0 4px 15px rgba(0,0,0,.05);
 }
 
 .section h2{
+    color:#22395d;
     margin-bottom:20px;
-    color:#23395d;
 }
 
-/* KNOWLEDGE */
+/* SKILLS */
 
 .skill-grid{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
     gap:20px;
 }
 
 .skill-card{
-    background:linear-gradient(
-    135deg,
-    #35506f,
-    #58739a);
+
+    background:
+    linear-gradient(
+        135deg,
+        #365271,
+        #5a759c
+    );
 
     color:white;
 
-    border-radius:20px;
-
     padding:20px;
+
+    border-radius:18px;
 }
 
 .skill-card h3{
@@ -158,40 +183,50 @@ body{
 /* TIMELINE */
 
 .timeline-item{
+
     border-left:3px solid #4c678b;
+
     padding-left:20px;
+
     margin-bottom:25px;
 }
 
 .timeline-item h3{
-    color:#23395d;
+
+    color:#22395d;
+
     margin-bottom:8px;
 }
 
 /* PDF */
 
 .cv-frame{
+
     width:100%;
+
     height:800px;
+
     border:none;
+
     border-radius:15px;
+
     background:white;
 }
 
-/* LIST */
+/* LISTS */
 
 .clean-list{
     padding-left:20px;
 }
 
 .clean-list li{
-    margin-bottom:8px;
+    margin-bottom:10px;
 }
 
 /* CONTACT */
 
 .contact p{
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 /* FOOTER */
@@ -199,56 +234,47 @@ body{
 footer{
     text-align:center;
     padding:30px;
-    color:#666;
+    color:#5c6a78;
 }
 
 @media(max-width:768px){
 
-.hero-content{
-    flex-direction:column;
-    text-align:center;
-}
+    .photo-frame{
+        width:250px;
+        height:250px;
+    }
 
-.photo-box{
-    width:240px;
-    height:240px;
-}
+    .profile-img{
+        width:200px;
+        height:200px;
 
-.profile-img{
-    width:190px;
-    height:190px;
-    object-position:center -60px;
-}
+        object-position:center 60%;
+    }
 
-.hero-text h1{
-    font-size:2rem;
-}
+    .hero h1{
+        font-size:2rem;
+    }
 
-.cv-frame{
-    height:500px;
-}
-
+    .cv-frame{
+        height:500px;
+    }
 }
 
 </style>
-
 </head>
 
 <body>
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="photo-frame">
 
-<div class="photo-box">
-
-<img src="Designer (3).jpg"
+<img
+src="Designer (3).jpg"
 alt="Profilbild"
 class="profile-img">
 
 </div>
-
-<div class="hero-text">
 
 <h1>Zahra Khazaei</h1>
 
@@ -276,10 +302,6 @@ Lebenslauf
 
 </div>
 
-</div>
-
-</div>
-
 </section>
 
 <div class="container">
@@ -289,10 +311,12 @@ Lebenslauf
 <h2>Über mich</h2>
 
 <p>
-Motivierte Umschülerin zur Fachinformatikerin für Systemintegration (IHK)
-mit Interesse an Linux, Windows, Netzwerktechnik, Python und modernen
-IT-Systemen. Ziel ist der Berufseinstieg im Bereich IT-Support,
-Systemadministration und Systemintegration.
+Motivierte Umschülerin zur Fachinformatikerin für
+Systemintegration (IHK) mit Interesse an Linux,
+Windows, Netzwerken, Python und modernen
+IT-Systemen. Mein Ziel ist der Berufseinstieg
+im Bereich IT-Support, Administration und
+Systemintegration.
 </p>
 
 </section>
@@ -305,32 +329,32 @@ Systemadministration und Systemintegration.
 
 <div class="skill-card">
 <h3>Linux</h3>
-<p>Ubuntu, Terminal, Benutzerverwaltung, Dateisysteme</p>
+<p>Ubuntu, Terminal, Benutzerverwaltung und Dateisysteme.</p>
 </div>
 
 <div class="skill-card">
 <h3>Windows</h3>
-<p>Installation, Konfiguration und Administration</p>
+<p>Installation, Konfiguration und Administration.</p>
 </div>
 
 <div class="skill-card">
 <h3>Netzwerke</h3>
-<p>TCP/IP, DNS, DHCP und Routing Grundlagen</p>
+<p>TCP/IP, DNS, DHCP und Routing Grundlagen.</p>
 </div>
 
 <div class="skill-card">
 <h3>Python</h3>
-<p>Grundlagen, Skripte und Automatisierung</p>
+<p>Grundlagen, Skripte und Automatisierung.</p>
 </div>
 
 <div class="skill-card">
 <h3>Git & GitHub</h3>
-<p>Repositories, Branches und Versionsverwaltung</p>
+<p>Repositories, Branches und Versionsverwaltung.</p>
 </div>
 
 <div class="skill-card">
 <h3>SQL</h3>
-<p>Datenbanken, Tabellen und einfache Abfragen</p>
+<p>Datenbanken, Tabellen und Datenabfragen.</p>
 </div>
 
 </div>
@@ -343,17 +367,17 @@ Systemadministration und Systemintegration.
 
 <div class="timeline-item">
 <h3>Fachinformatikerin für Systemintegration (IHK)</h3>
-<p>Umschulung mit Schwerpunkt Netzwerke, Linux und Administration.</p>
+<p>Umschulung mit Schwerpunkt Linux, Windows und Netzwerke.</p>
 </div>
 
 <div class="timeline-item">
 <h3>Portfolio Website</h3>
-<p>Entwicklung einer persönlichen Portfolio-Webseite mit HTML und CSS.</p>
+<p>Entwicklung einer Portfolio Webseite mit HTML und CSS.</p>
 </div>
 
 <div class="timeline-item">
 <h3>GitHub Projekte</h3>
-<p>Verwaltung und Dokumentation eigener Projekte.</p>
+<p>Verwaltung eigener Projekte und Dokumentation.</p>
 </div>
 
 </section>
@@ -365,8 +389,8 @@ Systemadministration und Systemintegration.
 <ul class="clean-list">
 <li>IHK Umschulung – Fachinformatikerin Systemintegration</li>
 <li>Linux Grundlagen</li>
-<li>Git & GitHub</li>
 <li>Netzwerk Grundlagen</li>
+<li>Git & GitHub</li>
 </ul>
 
 </section>
@@ -406,4 +430,17 @@ class="cv-frame">
 
 <p><strong>Standort:</strong> Aachen, Deutschland</p>
 
-<p><strong
+<p><strong>Berufsziel:</strong> IT-Support | Systemintegration | Administration</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+© 2026 Zahra Khazaei
+</footer>
+
+</body>
+</html>
