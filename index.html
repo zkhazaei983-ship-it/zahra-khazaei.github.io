@@ -14,12 +14,13 @@
 
 body{
     font-family:Segoe UI, Arial, sans-serif;
-    background:#eef1f5;
+    background:#eef2f5;
     color:#333;
+    line-height:1.8;
 }
 
 header{
-    background:linear-gradient(135deg,#16213e,#636b74);
+    background:linear-gradient(135deg,#16213e,#606b79);
     color:white;
     text-align:center;
     padding:60px 20px;
@@ -30,19 +31,47 @@ header{
     height:180px;
     object-fit:cover;
     border-radius:50%;
-    border:5px solid #d1d5db;
+    border:5px solid #d4d8de;
     margin-bottom:20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#dde2e8;
+    font-size:18px;
 }
 
 .container{
     max-width:1000px;
     margin:auto;
-    padding:30px;
+    padding:30px 20px;
 }
 
 .card{
     background:white;
     padding:25px;
-    margin-bottom:20px;
+    margin-bottom:25px;
     border-radius:12px;
-    box-shadow:0 
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#16213e;
+    margin-bottom:15px;
+    border-bottom:2px solid #d9dde2;
+    padding-bottom:10px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#16213e;
+   
