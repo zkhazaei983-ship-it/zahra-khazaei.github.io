@@ -3,87 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Zahra Khazaei | Fachinformatikerin Systemintegration</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Zahra Khazaei | Portfolio</title>
 
 <style>
-
-:root{
-  --bg:#f8f9fa;
-  --white:#ffffff;
-  --text:#222222;
-  --gray:#6b7280;
-  --border:#e5e7eb;
-  --dark:#2f3437;
-}
-
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.7;
-}
-
-.container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
+    font-family: Arial, sans-serif;
+    background:#f2f4f7;
+    color:#333;
+    line-height:1.7;
 }
 
 header{
-  background:var(--white);
-  border-bottom:1px solid var(--border);
+    background:#1f2a44;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
-.hero{
-  min-height:85vh;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:50px;
-  flex-wrap:wrap;
+header h1{
+    font-size:42px;
 }
 
-.hero-text{
-  flex:1;
-  min-width:300px;
+header p{
+    color:#d0d4db;
+    margin-top:10px;
 }
 
-.hero-text h1{
-  font-size:3rem;
-  margin-bottom:10px;
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
 }
 
-.hero-text h2{
-  font-size:1.2rem;
-  color:var(--gray);
-  font-weight:400;
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.hero-text p{
-  margin:25px 0;
-  color:var(--gray);
+h2{
+    color:#1f2a44;
+    margin-bottom:15px;
+    border-bottom:2px solid #c2c7cf;
+    padding-bottom:8px;
 }
 
-.hero-image{
-  flex:1;
-  text-align:center;
+ul{
+    padding-left:20px;
 }
 
-.hero-image img{
-  width:320px;
-  border-radius:20px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+li{
+    margin-bottom:8px;
 }
 
-.buttons{
- 
+.btn{
+    display:inline-block;
+    background:#1f2a44;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#344563;
+}
+
+footer{
+    background:#4f5b66;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Zahra Khazaei</h1>
+    <p>Fachinformatikerin für Systemintegration (IHK) | Umschulung</p>
+</header>
+
+<div class="container">
+
+    <section class="card">
+        <h2>Über mich</h2>
+        <p>
+            Motivierte Umschülerin zur Fachinformatikerin für
+            Systemintegration mit Interesse an Linux, Netzwerken,
+            Windows-Systemen, Python und IT-Support.
+        </p>
+    </section>
+
+   
