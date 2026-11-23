@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Zahra Khazaei | Portfolio</title>
 
 <style>
@@ -16,25 +15,246 @@
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:#eef2f7;
-    color:#2c3e50;
+    background:#edf1f7;
+    color:#2d3748;
     line-height:1.7;
 }
 
-/* HERO */
+/* HEADER */
 
 .hero{
-    background:linear-gradient(135deg,#1e2f5c,#4a5f80,#6f7f99);
+    background:linear-gradient(135deg,#1e2f5c,#445674,#72829b);
     text-align:center;
     color:white;
-    padding:40px 20px 120px;
+    padding:50px 20px 140px;
 }
 
 .profile-img{
-    width:230px;
-    height:230px;
+    width:240px;
+    height:240px;
     border-radius:50%;
+
     object-fit:cover;
 
-    /* بالای سر بیشتر دیده می‌شود */
-    object-position:center top
+    /* عکس پایین‌تر نمایش داده می‌شود */
+    object-position:center -30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.hero h1{
+    margin-top:25px;
+    font-size:3rem;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.contact{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.contact a{
+    color:white;
+    text-decoration:none;
+    background:rgba(255,255,255,.18);
+    padding:12px 20px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.contact a:hover{
+    background:rgba(255,255,255,.3);
+}
+
+/* CONTENT */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:-80px auto 50px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#1e2f5c;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#1e2f5c;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#304d8d;
+    transform:translateY(-3px);
+}
+
+/* PROJECTS */
+
+.project{
+    margin-bottom:25px;
+    padding-left:20px;
+    border-left:4px solid #304d8d;
+}
+
+.project h3{
+    color:#1e2f5c;
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2rem;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+}
+
+.card{
+    padding:25px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+<img src="Designer (3).jpg" alt="Profilbild" class="profile-img">
+
+<h1>Zahra Khazaei</h1>
+
+<p>Fachinformatikerin für Systemintegration (IHK)</p>
+
+<div class="contact">
+
+<a href="mailto:zkhazaei983@gmail.com">
+📧 E-Mail
+</a>
+
+<a href="https://github.com/zkhazaei983-ship-it" target="_blank">
+🐙 GitHub
+</a>
+
+<a href="g1.pdf" target="_blank">
+📄 Lebenslauf
+</a>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Über mich</h2>
+
+<p>
+Motivierte Umschülerin zur Fachinformatikerin für Systemintegration
+(IHK) mit Interesse an Linux, Windows, Netzwerktechnik, Python,
+GitHub und modernen IT-Systemen. Ziel ist der Berufseinstieg im
+Bereich IT-Support, Systemadministration und Systemintegration.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Kenntnisse</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Linux</div>
+<div class="skill">Windows</div>
+<div class="skill">GitHub</div>
+<div class="skill">SQL</div>
+<div class="skill">Netzwerke</div>
+<div class="skill">Active Directory</div>
+<div class="skill">VirtualBox</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Projekte</h2>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>
+Erstellung einer persönlichen Portfolio-Webseite mit HTML und CSS.
+</p>
+</div>
+
+<div class="project">
+<h3>GitHub Projekte</h3>
+<p>
+Verwaltung von Projekten und Quellcode über GitHub.
+</p>
+</div>
+
+<div class="project">
+<h3>Linux Übungen</h3>
+<p>
+Arbeit mit Ubuntu Linux, Terminal, Benutzerverwaltung und Dateisystem.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Zahra Khazaei
+</footer>
+
+</body>
+</html>
