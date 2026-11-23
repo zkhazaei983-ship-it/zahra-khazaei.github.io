@@ -8,167 +8,247 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Segoe UI,sans-serif;
-background:#e9eef4;
-color:#243447;
-line-height:1.7;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(180deg,#d7dde7,#e9eef4,#f6f8fb);
+    color:#243447;
+    line-height:1.7;
 }
 
+/* HERO */
+
 .hero{
-background:linear-gradient(135deg,#23395d,#4c668a,#70849e);
-color:white;
-text-align:center;
-padding:60px 20px;
+    background:linear-gradient(135deg,#21344f,#425c7c,#7085a0);
+    color:white;
+    padding:70px 40px;
+}
+
+.hero-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.photo-box{
+    width:320px;
+    height:320px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
 }
 
 .profile-img{
-width:220px;
-height:220px;
-border-radius:50%;
-object-fit:cover;
-object-position:center -50px;
-box-shadow:0 8px 25px rgba(0,0,0,.25);
+    width:260px;
+    height:260px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    /* تنظیم نمایش بالای سر */
+    object-position:center -90px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
 }
 
-.hero h1{
-margin-top:20px;
-font-size:3rem;
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3.2rem;
+    margin-bottom:10px;
 }
 
 .subtitle{
-font-size:1.2rem;
-margin-top:10px;
+    font-size:1.3rem;
+    margin-bottom:10px;
 }
 
 .tech{
-margin-top:10px;
-font-size:15px;
-opacity:.9;
+    font-size:1rem;
+    opacity:.9;
+    margin-bottom:20px;
 }
 
-.top-links{
-margin-top:20px;
+.links a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    font-weight:600;
 }
 
-.top-links a{
-color:white;
-text-decoration:none;
-margin:0 10px;
-font-weight:600;
+.links a:hover{
+    text-decoration:underline;
 }
 
-.top-links a:hover{
-text-decoration:underline;
-}
+/* MAIN */
 
 .container{
-width:90%;
-max-width:1100px;
-margin:40px auto;
+    width:90%;
+    max-width:1150px;
+    margin:40px auto;
 }
 
 .section{
-background:#f4f7fb;
-border-left:5px solid #4c668a;
-padding:30px;
-margin-bottom:25px;
-border-radius:18px;
-box-shadow:0 3px 10px rgba(0,0,0,.05);
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border-left:5px solid #4c678b;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
 }
 
 .section h2{
-margin-bottom:20px;
-color:#23395d;
+    margin-bottom:20px;
+    color:#23395d;
 }
 
-/* Skills */
+/* KNOWLEDGE */
 
 .skill-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .skill-card{
-background:#4c668a;
-color:white;
-padding:18px;
-border-radius:15px;
+    background:linear-gradient(
+    135deg,
+    #35506f,
+    #58739a);
+
+    color:white;
+
+    border-radius:20px;
+
+    padding:20px;
 }
 
 .skill-card h3{
-margin-bottom:8px;
-font-size:18px;
+    margin-bottom:10px;
 }
 
-/* Timeline */
+/* TIMELINE */
 
 .timeline-item{
-padding-left:20px;
-border-left:3px solid #4c668a;
-margin-bottom:20px;
+    border-left:3px solid #4c678b;
+    padding-left:20px;
+    margin-bottom:25px;
 }
 
 .timeline-item h3{
-color:#23395d;
-margin-bottom:5px;
+    color:#23395d;
+    margin-bottom:8px;
 }
 
 /* PDF */
 
 .cv-frame{
-width:100%;
-height:700px;
-border:none;
-border-radius:15px;
-background:white;
+    width:100%;
+    height:800px;
+    border:none;
+    border-radius:15px;
+    background:white;
 }
 
-/* Kontakt */
+/* LIST */
+
+.clean-list{
+    padding-left:20px;
+}
+
+.clean-list li{
+    margin-bottom:8px;
+}
+
+/* CONTACT */
 
 .contact p{
-margin-bottom:10px;
+    margin-bottom:12px;
 }
 
+/* FOOTER */
+
 footer{
-text-align:center;
-padding:30px;
-color:#666;
+    text-align:center;
+    padding:30px;
+    color:#666;
 }
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:2rem;
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.photo-box{
+    width:240px;
+    height:240px;
 }
 
 .profile-img{
-width:170px;
-height:170px;
+    width:190px;
+    height:190px;
+    object-position:center -60px;
+}
+
+.hero-text h1{
+    font-size:2rem;
 }
 
 .cv-frame{
-height:500px;
+    height:500px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
 <section class="hero">
 
+<div class="hero-content">
+
+<div class="photo-box">
+
 <img src="Designer (3).jpg"
 alt="Profilbild"
 class="profile-img">
+
+</div>
+
+<div class="hero-text">
 
 <h1>Zahra Khazaei</h1>
 
@@ -177,13 +257,13 @@ Fachinformatikerin für Systemintegration (IHK)
 </p>
 
 <p class="tech">
-Linux • Windows • Netzwerke • Python • GitHub
+Linux • Windows • Netzwerke • Python • GitHub • SQL
 </p>
 
-<div class="top-links">
+<div class="links">
 
 <a href="mailto:zkhazaei983@gmail.com">
-E-Mail
+E‑Mail
 </a>
 
 <a href="https://github.com/zkhazaei983-ship-it" target="_blank">
@@ -193,6 +273,10 @@ GitHub
 <a href="g1.pdf" target="_blank">
 Lebenslauf
 </a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -241,12 +325,12 @@ Systemadministration und Systemintegration.
 
 <div class="skill-card">
 <h3>Git & GitHub</h3>
-<p>Repositories, Versionsverwaltung und Dokumentation</p>
+<p>Repositories, Branches und Versionsverwaltung</p>
 </div>
 
 <div class="skill-card">
 <h3>SQL</h3>
-<p>Datenbanken, Tabellen und Abfragen</p>
+<p>Datenbanken, Tabellen und einfache Abfragen</p>
 </div>
 
 </div>
@@ -259,17 +343,17 @@ Systemadministration und Systemintegration.
 
 <div class="timeline-item">
 <h3>Fachinformatikerin für Systemintegration (IHK)</h3>
-<p>Umschulung mit Schwerpunkt Linux, Netzwerke und Administration.</p>
+<p>Umschulung mit Schwerpunkt Netzwerke, Linux und Administration.</p>
 </div>
 
 <div class="timeline-item">
 <h3>Portfolio Website</h3>
-<p>Entwicklung einer Portfolio-Webseite mit HTML und CSS.</p>
+<p>Entwicklung einer persönlichen Portfolio-Webseite mit HTML und CSS.</p>
 </div>
 
 <div class="timeline-item">
 <h3>GitHub Projekte</h3>
-<p>Veröffentlichung und Verwaltung eigener Projekte auf GitHub.</p>
+<p>Verwaltung und Dokumentation eigener Projekte.</p>
 </div>
 
 </section>
@@ -278,11 +362,11 @@ Systemadministration und Systemintegration.
 
 <h2>Zertifikate</h2>
 
-<ul>
+<ul class="clean-list">
 <li>IHK Umschulung – Fachinformatikerin Systemintegration</li>
 <li>Linux Grundlagen</li>
-<li>Netzwerk Grundlagen</li>
 <li>Git & GitHub</li>
+<li>Netzwerk Grundlagen</li>
 </ul>
 
 </section>
@@ -291,7 +375,7 @@ Systemadministration und Systemintegration.
 
 <h2>Sprachen</h2>
 
-<ul>
+<ul class="clean-list">
 <li>Deutsch – B2</li>
 <li>Englisch – Grundkenntnisse</li>
 <li>Persisch – Muttersprache</li>
@@ -316,23 +400,10 @@ class="cv-frame">
 
 <div class="contact">
 
-<p><strong>E-Mail:</strong> zkhazaei983@gmail.com</p>
+<p><strong>E‑Mail:</strong> zkhazaei983@gmail.com</p>
 
 <p><strong>GitHub:</strong> github.com/zkhazaei983-ship-it</p>
 
 <p><strong>Standort:</strong> Aachen, Deutschland</p>
 
-<p><strong>Berufsziel:</strong> IT-Support | Systemintegration | Administration</p>
-
-</div>
-
-</section>
-
-</div>
-
-<footer>
-© 2026 Zahra Khazaei
-</footer>
-
-</body>
-</html>
+<p><strong
