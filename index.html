@@ -1,293 +1,101 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra Khazaei | Portfolio</title>
 
-<title>Zahra Khazaei | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Segoe UI,sans-serif;
-    background:#edf2f7;
-    color:#243447;
-    line-height:1.7;
-}
-
-/* HEADER */
-
-
-.hero{
-    background:linear-gradient(
-        rgba(25, 45, 70, 0.35),
-        rgba(25, 45, 70, 0.35)
-        ),
-       
-  url("./Media (15).jpg");
- 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width:100%;
-    max-width: 100%;
-    min-height: 380px;
-    color: white;
-    padding: 40px 0; 
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.hero-content{
-    max-width:1200px;
-    margin:auto;
-
-    display:flex;
-    align-items:center;
-    gap:60px;
-}
-
-.profile-img{
-    width:280px;
-    height:280px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    /* نمایش بیشتر قسمت بالای عکس */
-    object-position:center 25%;
-    border:4px solid rgba(255,255,255,0.15);
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.12);
-}
-
-
-.hero-text{
-    flex:1;
-}
-
-.hero-text h1{
-    font-size:3.5rem;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    font-size:1.4rem;
-    margin-bottom:15px;
-}
-
-.tech{
-    margin-bottom:25px;
-}
-
-.links a{
-    display:inline-block;
-    padding:12px 22px;
-    border-radius:10px;
-    background:rgba(255,255,255,.15);
-    backdrop-filter:blur(5px);
-    margin-right:12px;
-    transition:.3s;
-}
-.links a:hover{
-   background:white;
-    color:#243447;
-    text-decoration:none;
-
-}
-
-/* CONTENT */
-
-.container{
-    max-width:1200px;
-    margin:40px auto;
-    padding:0 20px;
-}
-
-.section{
-    background:white;
-    border-radius:20px;
-    padding:30px;
-    margin-bottom:25px;
-
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.05);
-}
-
-.section h2{
-    color:#243b55;
-    margin-bottom:20px;
-}
-
-/* SKILLS */
-
-.skills{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:20px;
-}
-
-.skill{
-
-    background:
-    linear-gradient(
-    135deg,
-    #365271,
-    #57739b);
-
-    color:white;
-
-    padding:20px;
-
-    border-radius:15px;
-}
-
-.skill h3{
-    margin-bottom:10px;
-}
-
-
-}
-
-/* FOOTER */
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#666;
-}
-
-@media(max-width:768px){
-
-.hero-content{
-    flex-direction:column;
-    text-align:center;
-}
-
-.profile-img{
-    width:200px;
-    height:200px;
-}
-
-.hero-text h1{
-    font-size:2rem;
-}
-
-.cv-frame{
-    height:500px;
-}
-
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+<header>
+    <nav>
+        <div class="logo">Zahra Khazaei</div>
+
+        <ul>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#skills">Kenntnisse</a></li>
+        </ul>
+    </nav>
+</header>
 
 <section class="hero">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<img src="Designer (3).jpg"
-alt="Profilbild"
-class="profile-img">
+        <h1>IT Support & System Administration</h1>
 
-<div class="hero-text">
+        <p>
+            Motivierte IT-Fachkraft mit Kenntnissen in Windows,
+            Netzwerken, Python, SQL und GitHub.
+        </p>
 
-<h1>Zahra Khazaei</h1>
+        <a
+            href="https://github.com/zkhazaei983-ship-it"
+            target="_blank"
+            class="btn">
+            GitHub Profil
+        </a>
 
-<p class="subtitle">
-Fachinformatikerin für Systemintegration (IHK)
-</p>
-
-<p class="tech">
-• Netzwerke • Python • GitHub • SQL • Window
-</p>
-
-<div class="links">
-
-<a href="mailto:zkhazaei983@gmail.com">
-E‑Mail
-</a>
-
-<a href="https://github.com/zkhazaei983-ship-it" target="_blank">
-GitHub
-</a>
-
-<a href="g1.pdf" target="_blank">
-Lebenslauf
-</a>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<div class="container">
+<section id="about" class="section">
 
-<section class="section">
+    <h2>Über mich</h2>
 
-<h2>Über mich</h2>
-
-<p>
-Motivierte Umschülerin zur Fachinformatikerin für Systemintegration (IHK)
-mit Interesse an Linux, Windows, Netzwerktechnik, Python und modernen
-IT-Systemen.
-</p>
-
-</section>
-
-<section class="section">
-
-<h2>Kenntnisse</h2>
-
-<div class="skills">
-
-<div class="skill">
-<h3>Windows</h3>
-<p>Installation und Administration</p>
-</div>
-
-<div class="skill">
-<h3>Netzwerke</h3>
-<p>TCP/IP, DNS, DHCP</p>
-</div>
-
-<div class="skill">
-<h3>Python</h3>
-<p>Grundlagen und Skripte</p>
-</div>
-
-<div class="skill">
-<h3>Git & GitHub</h3>
-<p>Repository und Versionsverwaltung</p>
-</div>
-
-<div class="skill">
-<h3>SQL</h3>
-<p>Datenbanken und Abfragen</p>
-</div>
+    <p>
+        Ich interessiere mich für IT-Support,
+        Systemadministration und Netzwerktechnik.
+        Durch praktische Projekte und Weiterbildungen
+        erweitere ich kontinuierlich meine Kenntnisse
+        im IT-Bereich.
+    </p>
 
 </section>
 
-</div>
+<section id="skills" class="section">
+
+    <h2>Kenntnisse</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Windows</h3>
+            <p>Installation und Administration</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Netzwerke</h3>
+            <p>TCP/IP, DNS, DHCP</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Python</h3>
+            <p>Grundlagen und Skripte</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Git & GitHub</h3>
+            <p>Versionsverwaltung</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>SQL</h3>
+            <p>Datenbanken und Abfragen</p>
+        </div>
+
+    </div>
+
+</section>
 
 <footer>
-© 2026 Zahra Khazaei
+    © 2026 Zahra Khazaei
 </footer>
 
 </body>
