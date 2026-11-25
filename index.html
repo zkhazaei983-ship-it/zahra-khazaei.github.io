@@ -37,9 +37,9 @@ body{
     background-repeat: no-repeat;
     width:100%;
     max-width: 100%;
-    min-height: 250px;
+    min-height: 380px;
     color: white;
-    padding: 30px 20px; 
+    padding: 40px 0; 
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -88,14 +88,19 @@ body{
 }
 
 .links a{
-    color:white;
-    text-decoration:none;
-    margin-right:20px;
-    font-weight:600;
-}
-
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:10px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(5px);
+    margin-right:12px;
+    transition:.3s;
+    
 .links a:hover{
-    text-decoration:underline;
+   background:white;
+    color:#243447;
+    text-decoration:none;
+
 }
 
 /* CONTENT */
